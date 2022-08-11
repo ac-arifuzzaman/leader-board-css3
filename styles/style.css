@@ -1,7 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:wght@500&family=Poppins:wght@400;500&family=Rubik&display=swap");
+/* common or utilities */
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Dancing Script", cursive;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Rubik", sans-serif;
+  background-color: #f3f1ff;
+}
+
+.container {
+  background-color: white;
+  width: 970px;
+  padding: 30px;
+  margin-top: 21px;
+  border-radius: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+hr {
+  margin: 39px 0;
+  width: 850px;
+  border: 1px solid #d1d1d1;
+}
 /* top player section */
+
+.section-title {
+  color: blue;
+  font-size: 24px;
+  padding-top: 6px;
+  margin-bottom: 30px;
+}
+
 .players {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
 }
 
 .player {
@@ -12,4 +54,91 @@
 .player img {
   width: 56px;
   height: 56px;
+}
+
+.player-name {
+  margin-left: 10px;
+}
+
+/* top blog styles */
+.all-blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 30px;
+}
+.blogs {
+  display: flex;
+  align-items: center;
+}
+
+.thumbnail img {
+  width: 176px;
+  height: 130px;
+  margin-right: 20px;
+}
+
+.blog-title {
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.blog-author {
+  color: #d1d1d1;
+}
+
+.blog-author a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* course styles */
+
+.courses {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.course img {
+  width: 196px;
+  height: 104px;
+  margin-bottom: 20px;
+}
+
+.course-instructor {
+  margin: 10px 0;
+}
+
+.course-instructor a {
+  text-decoration: none;
+  color: #fd9b07;
+}
+
+.course-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.field {
+  color: #fd9b07;
+  font-size: 14px;
+}
+
+.empty {
+  color: #65f8f8;
+  font-size: 14px;
+}
+
+.ratting {
+  margin: 0 10px;
+}
+
+.course-duration {
+  background-color: #fc070725;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 2px 3px;
+  color: red;
 }
